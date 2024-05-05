@@ -1,0 +1,1176 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/veron/ontologies/2024/3/flight-satisfaction-survey-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/veron/ontologies/2024/3/flight-satisfaction-survey-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/veron/ontologies/2024/3/flight-satisfaction-survey-ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="fsso," IRI="file:/D:/UOC/FSSO"/>
+    <Declaration>
+        <Class IRI="/AircraftModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Airline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CheckIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Crew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EntertainmentActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Flight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FlightAspects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FlightDetails"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FlightFare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FlightServicesAndOperations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FlightTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GeographicalAspects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Layover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LeisureAndEntertainment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Luggage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OnBoardService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Passenger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PassengerRelatedEntities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ratings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RegistrationOperations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Reservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SeatType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TypeDocumentIdentity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WeatherEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/belongsToFlight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/flyOnFlight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/givesRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasAirline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasFlightDetails"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasIncomingFlight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasOutgoingFlight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPassenger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/offersService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/worksOnFlight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/codeAirport"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/countryOrigin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/flightDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/flightDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/flightName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/nameAirline"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/namePassenger"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ratingCommentary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ratingValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/EK392"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/HwangSimok"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/JFKAirport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/JohnSmith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/LH496"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/QR123"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/QatarAirways"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Ryanair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SophieLefebvre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/South_Korea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/UK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/USA"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:minCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/AircraftModel"/>
+        <Class IRI="/FlightDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Airline"/>
+        <Class IRI="/FlightAspects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Airport"/>
+        <Class IRI="/FlightAspects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CheckIn"/>
+        <Class IRI="/PassengerRelatedEntities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Country"/>
+        <Class IRI="/GeographicalAspects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Crew"/>
+        <Class IRI="/FlightServicesAndOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EntertainmentActivity"/>
+        <Class IRI="/LeisureAndEntertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flight"/>
+        <Class IRI="/FlightAspects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flight"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="/hasFlightDetails"/>
+            <NamedIndividual IRI="/QR123"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flight"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="/ratingValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flight"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/flightDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flight"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/flightDuration"/>
+            <Datatype abbreviatedIRI="xsd:long"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flight"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/flightName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlightFare"/>
+        <Class IRI="/FlightServicesAndOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlightTime"/>
+        <Class IRI="/FlightDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Layover"/>
+        <Class IRI="/FlightAspects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Luggage"/>
+        <Class IRI="/FlightDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OnBoardService"/>
+        <Class IRI="/FlightServicesAndOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Passenger"/>
+        <Class IRI="/PassengerRelatedEntities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ratings"/>
+        <Class IRI="/FlightDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ratings"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/belongsToFlight"/>
+            <Class IRI="/Flight"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RegistrationOperations"/>
+        <Class IRI="/FlightServicesAndOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Reservation"/>
+        <Class IRI="/FlightServicesAndOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SeatType"/>
+        <Class IRI="/FlightDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Service"/>
+        <Class IRI="/FlightServicesAndOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TypeDocumentIdentity"/>
+        <Class IRI="/PassengerRelatedEntities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WeatherEvent"/>
+        <Class IRI="/FlightAspects"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="/Ratings"/>
+        <NamedIndividual IRI="#8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Flight"/>
+        <NamedIndividual IRI="/EK392"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Airport"/>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Passenger"/>
+        <NamedIndividual IRI="/HwangSimok"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Airport"/>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Flight"/>
+        <NamedIndividual IRI="/JFKAirport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Flight"/>
+        <NamedIndividual IRI="/LH496"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Flight"/>
+        <NamedIndividual IRI="/QR123"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Airline"/>
+        <NamedIndividual IRI="/QatarAirways"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Airline"/>
+        <NamedIndividual IRI="/Ryanair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Passenger"/>
+        <NamedIndividual IRI="/SophieLefebvre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Country"/>
+        <NamedIndividual IRI="/South_Korea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Country"/>
+        <NamedIndividual IRI="/UK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Country"/>
+        <NamedIndividual IRI="/USA"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="/EK392"/>
+        <NamedIndividual IRI="/LH496"/>
+        <NamedIndividual IRI="/QR123"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+        <NamedIndividual IRI="/JFKAirport"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="/HwangSimok"/>
+        <NamedIndividual IRI="/JohnSmith"/>
+        <NamedIndividual IRI="/SophieLefebvre"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+        <NamedIndividual IRI="/JFKAirport"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="/JohnSmith"/>
+        <NamedIndividual IRI="/SophieLefebvre"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="/LH496"/>
+        <NamedIndividual IRI="/QR123"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="/South_Korea"/>
+        <NamedIndividual IRI="/UK"/>
+        <NamedIndividual IRI="/USA"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAirline"/>
+        <NamedIndividual IRI="/EK392"/>
+        <NamedIndividual IRI="/Ryanair"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasPassenger"/>
+        <NamedIndividual IRI="/EK392"/>
+        <NamedIndividual IRI="/SophieLefebvre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <NamedIndividual IRI="/EK392"/>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasCountry"/>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+        <NamedIndividual IRI="/UK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIncomingFlight"/>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+        <NamedIndividual IRI="/EK392"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/flyOnFlight"/>
+        <NamedIndividual IRI="/HwangSimok"/>
+        <NamedIndividual IRI="/LH496"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/givesRating"/>
+        <NamedIndividual IRI="/HwangSimok"/>
+        <NamedIndividual IRI="#8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasCountry"/>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+        <NamedIndividual IRI="/South_Korea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIncomingFlight"/>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+        <NamedIndividual IRI="/LH496"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasCountry"/>
+        <NamedIndividual IRI="/JFKAirport"/>
+        <NamedIndividual IRI="/USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasOutgoingFlight"/>
+        <NamedIndividual IRI="/JFKAirport"/>
+        <NamedIndividual IRI="/QR123"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/flyOnFlight"/>
+        <NamedIndividual IRI="/JohnSmith"/>
+        <NamedIndividual IRI="/QR123"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAirline"/>
+        <NamedIndividual IRI="/LH496"/>
+        <NamedIndividual IRI="/QatarAirways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasPassenger"/>
+        <NamedIndividual IRI="/LH496"/>
+        <NamedIndividual IRI="/HwangSimok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <NamedIndividual IRI="/LH496"/>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAirline"/>
+        <NamedIndividual IRI="/QR123"/>
+        <NamedIndividual IRI="/QatarAirways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasPassenger"/>
+        <NamedIndividual IRI="/QR123"/>
+        <NamedIndividual IRI="/JohnSmith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <NamedIndividual IRI="/QR123"/>
+        <NamedIndividual IRI="/JFKAirport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <NamedIndividual IRI="/QatarAirways"/>
+        <NamedIndividual IRI="/IncheonInternationalAirport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <NamedIndividual IRI="/QatarAirways"/>
+        <NamedIndividual IRI="/JFKAirport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <NamedIndividual IRI="/Ryanair"/>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingCommentary"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>Good service on board, on time.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightDate"/>
+        <NamedIndividual IRI="/EK392"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-02T13:20:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightDuration"/>
+        <NamedIndividual IRI="/EK392"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightName"/>
+        <NamedIndividual IRI="/EK392"/>
+        <Literal>EK392</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/codeAirport"/>
+        <NamedIndividual IRI="/HeathrowAirport"/>
+        <Literal>HTA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/namePassenger"/>
+        <NamedIndividual IRI="/HwangSimok"/>
+        <Literal>Hwang Simok</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/namePassenger"/>
+        <NamedIndividual IRI="/JohnSmith"/>
+        <Literal>John Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightDate"/>
+        <NamedIndividual IRI="/LH496"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-28T13:20:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightDuration"/>
+        <NamedIndividual IRI="/LH496"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightName"/>
+        <NamedIndividual IRI="/LH496"/>
+        <Literal>LH496</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightDate"/>
+        <NamedIndividual IRI="/QR123"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-28T13:20:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightDuration"/>
+        <NamedIndividual IRI="/QR123"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/flightName"/>
+        <NamedIndividual IRI="/QR123"/>
+        <Literal>QR123</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/belongsToFlight"/>
+        <Class IRI="/Ratings"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/flyOnFlight"/>
+        <Class IRI="/Passenger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/givesRating"/>
+        <Class IRI="/Passenger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAirline"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasCountry"/>
+        <Class IRI="/Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasFlightDetails"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasIncomingFlight"/>
+        <Class IRI="/Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasOutgoingFlight"/>
+        <Class IRI="/Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPassenger"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/offersService"/>
+        <Class IRI="/Airline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <Class IRI="/Airline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/worksOnFlight"/>
+        <Class IRI="/Crew"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/belongsToFlight"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/belongsToFlight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/belongsToFlight"/>
+            <Class IRI="/Flight"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/flyOnFlight"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/givesRating"/>
+        <Class IRI="/Ratings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasAirline"/>
+        <Class IRI="/Airline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasCountry"/>
+        <Class IRI="/Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFlightDetails"/>
+        <Class IRI="/AircraftModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFlightDetails"/>
+        <Class IRI="/FlightTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFlightDetails"/>
+        <Class IRI="/Luggage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFlightDetails"/>
+        <Class IRI="/Ratings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFlightDetails"/>
+        <Class IRI="/SeatType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasIncomingFlight"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasOutgoingFlight"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPassenger"/>
+        <Class IRI="/Passenger"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPassenger"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/hasPassenger"/>
+            <Class IRI="/Passenger"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/offersService"/>
+        <Class IRI="/Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <Class IRI="/Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/operatesOnAirport"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/operatesOnAirport"/>
+            <Class IRI="/Airport"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/worksOnFlight"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="/codeAirport"/>
+        <Class IRI="/Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/countryOrigin"/>
+        <Class IRI="/Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/flightDate"/>
+        <Class IRI="/Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/flightDuration"/>
+        <Class IRI="/Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/flightName"/>
+        <Class IRI="/Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/nameAirline"/>
+        <Class IRI="/Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/namePassenger"/>
+        <Class IRI="/Passenger"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ratingCommentary"/>
+        <Class IRI="/Ratings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ratingValue"/>
+        <Class IRI="/Passenger"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ratingValue"/>
+        <Class IRI="/Ratings"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/codeAirport"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/countryOrigin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/flightDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/flightDuration"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/flightDuration"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/flightName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/nameAirline"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/namePassenger"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/ratingCommentary"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/ratingValue"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Flight"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasAirline"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+                <Variable IRI="urn:swrl:var#airline"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasPassenger"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/belongsToFlight"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+                <Variable IRI="urn:swrl:var#crew"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/operatesOnAirport"/>
+                <Variable IRI="urn:swrl:var#airline"/>
+                <Variable IRI="urn:swrl:var#airport"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/offersService"/>
+                <Variable IRI="urn:swrl:var#airline"/>
+                <Variable IRI="urn:swrl:var#service"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/FlightDetails"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Flight"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasIncomingFlight"/>
+                <Variable IRI="urn:swrl:var#airport"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasOutgoingFlight"/>
+                <Variable IRI="urn:swrl:var#airport"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/Layover"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Ratings"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasAirline"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+                <Variable IRI="urn:swrl:var#airline"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasCountry"/>
+                <Variable IRI="urn:swrl:var#airport"/>
+                <Variable IRI="urn:swrl:var#country"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasPassenger"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/ratingValue"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+                <Variable IRI="urn:swrl:var#value"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/ratingCommentary"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+                <Variable IRI="urn:swrl:var#comment"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/FlightDetails"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/flyOnFlight"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/givesRating"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+                <Variable IRI="urn:swrl:var#rating"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasPassenger"/>
+                <Variable IRI="urn:swrl:var#flight"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/Ratings"/>
+                <Variable IRI="urn:swrl:var#passenger"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AircraftModel</IRI>
+        <Literal>Aircraft / plane model for the flight, usually the code name for it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Airline</IRI>
+        <Literal>Company Airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>/Airline</IRI>
+        <Literal>https://dbpedia.org/page/Airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Airport</IRI>
+        <Literal>Airport class, with an unique name and a code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Airport</IRI>
+        <Literal>Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>/Airport</IRI>
+        <Literal>https://dbpedia.org/page/Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CheckIn</IRI>
+        <Literal>Whether the passenger has check-in or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Country</IRI>
+        <Literal>Can be country of passenger, origin of the flight, or destination of the flight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Crew</IRI>
+        <Literal>Cabin crew assigned to a flight, their rol and any additional info that may be useful.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/EntertainmentActivity</IRI>
+        <Literal>Type of entertainment activities available during the flight or on ground.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Flight</IRI>
+        <Literal>Flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FlightFare</IRI>
+        <Literal>Flight fare, as in the price for the flight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FlightTime</IRI>
+        <Literal>Duration of the flight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/HeathrowAirport</IRI>
+        <Literal>UK airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>/HeathrowAirport</IRI>
+        <Literal>http://dbpedia.org/resource/Heathrow_Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/IncheonInternationalAirport</IRI>
+        <Literal>Refers to the Incheon Airport in Seoul, South Korea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>/IncheonInternationalAirport</IRI>
+        <Literal>http://dbpedia.org/resource/Incheon_International_Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/JFKAirport</IRI>
+        <Literal>Correponds to the J.F.K. Airport in the USA.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>/JFKAirport</IRI>
+        <Literal>http://dbpedia.org/resource/John_F._Kennedy_International_Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/JohnSmith</IRI>
+        <Literal>Passenger 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Layover</IRI>
+        <Literal>Layover / Scales of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Luggage</IRI>
+        <Literal>Whether the passenger has luggage or not and the type (check-in, handbag, cabin only).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/OnBoardService</IRI>
+        <Literal>Service provided during the flight by the cabin crew.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/OnBoardService</IRI>
+        <Literal>OnBoardService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Passenger</IRI>
+        <Literal>Passenger that´s flying</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/QR123</IRI>
+        <Literal>Flight UK - USA, Qatar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/QatarAirways</IRI>
+        <Literal>Airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>/QatarAirways</IRI>
+        <Literal>http://dbpedia.org/resource/Qatar_Airways</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Ratings</IRI>
+        <Literal>Satisfaction rating for the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RegistrationOperations</IRI>
+        <Literal>Operation registration that belongs to a company and registers information for a specific flight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Reservation</IRI>
+        <Literal>Reservation of the flight, for a specific flight by a passenger.Usually has a identification code and a date.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Ryanair</IRI>
+        <Literal>Ryanair airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>/Ryanair</IRI>
+        <Literal>http://dbpedia.org/resource/Ryanair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SeatType</IRI>
+        <Literal>Type of Seat (Economy, Business, etcI.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Service</IRI>
+        <Literal>Services offered by the company (food, entertainment, wifi, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/South_Korea</IRI>
+        <Literal>Country 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TypeDocumentIdentity</IRI>
+        <Literal>Type of document of identity the passenger has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/UK</IRI>
+        <Literal>Country 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/USA</IRI>
+        <Literal>Country 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WeatherEvent</IRI>
+        <Literal>Meteorogical events that may affect the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minCardinality"/>
+        <IRI>/flyOnFlight</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
+        <IRI>/namePassenger</IRI>
+        <Literal>sxd:string != &quot;&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minCardinality"/>
+        <IRI>/operatesOnAirport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
